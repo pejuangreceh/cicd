@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: |
           go version
-          go get -u golang.org/x/lint/golint
+          go install -u golang.org/x/lint/golint
       - name: Setup Go environment
         uses: actions/setup-go@v4.0.1
         with:
